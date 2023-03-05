@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+
+	<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+
+<body>
+	<header class="header">
+		<div class="container header__content">
+			<img src="img/Logo.svg" class="logo" alt="logo">
+
+			<div class="header__info">
+				<span class="info__span">
+					<svg width="11" height="15" viewBox="0 0 11 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M5.3049 0.000854492C2.38797 0.000854492 0.0148926 2.37394 0.0148926 5.29083C0.0148926 8.91079 4.74893 14.2251 4.95049 14.4496C5.1398 14.6604 5.47034 14.6601 5.65931 14.4496C5.86087 14.2251 10.5949 8.91079 10.5949 5.29083C10.5948 2.37394 8.2218 0.000854492 5.3049 0.000854492ZM5.3049 7.95237C3.83732 7.95237 2.64339 6.75841 2.64339 5.29083C2.64339 3.82326 3.83735 2.62933 5.3049 2.62933C6.77245 2.62933 7.96638 3.82328 7.96638 5.29086C7.96638 6.75844 6.77245 7.95237 5.3049 7.95237Z"
+							fill="white" />
+					</svg>
+
+					ООО СТРОЙБРИГ ИНН: 7720484439
+				</span>
+				<span class="info__span">
+					<svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path
+							d="M7.5 0C3.35795 0 0 3.35787 0 7.5C0 11.6421 3.35787 15 7.5 15C11.6421 15 15 11.6421 15 7.5C15 3.35787 11.6421 0 7.5 0ZM7.5 2.27273C7.75112 2.27273 7.95451 2.47628 7.95451 2.72723V7.23697L11.4701 9.26826C11.6875 9.39382 11.759 9.66872 11.6334 9.88624C11.5079 10.1036 11.233 10.1751 11.0154 10.0495C9.76889 9.33041 8.51552 8.6072 7.27246 7.89048C7.13675 7.81185 7.04512 7.6679 7.04512 7.49985V2.72713C7.04512 2.47601 7.24868 2.27262 7.49963 2.27262L7.5 2.27273Z"
+							fill="white" />
+					</svg>
+					Пн-Вс с 9:00 до 20:00
+				</span>
+				<span class="info__span">
+					<svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<g clip-path="url(#clip0_1_346)">
+							<path
+								d="M11.6637 9.74756L10.1561 11.2602C9.54478 11.8737 8.46914 11.8869 7.84459 11.2602L6.33699 9.74756L0.922363 15.1798C1.12391 15.273 1.34614 15.3286 1.58239 15.3286H16.4183C16.6546 15.3286 16.8767 15.273 17.0782 15.1798L11.6637 9.74756Z"
+								fill="white" />
+							<path
+								d="M16.4183 2.6709H1.58232C1.34607 2.6709 1.12384 2.72652 0.922363 2.81971L6.70827 8.62482C6.70866 8.62521 6.70912 8.62528 6.7095 8.62566C6.70989 8.62605 6.70996 8.62658 6.70996 8.62658L8.59128 10.5141C8.79111 10.7139 9.20954 10.7139 9.40936 10.5141L11.2903 8.62689C11.2903 8.62689 11.2908 8.62605 11.2911 8.62566C11.2911 8.62566 11.292 8.62521 11.2924 8.62482L17.0781 2.81968C16.8767 2.72645 16.6545 2.6709 16.4183 2.6709Z"
+								fill="white" />
+							<path
+								d="M0.16777 3.55737C0.0634961 3.76824 -0.000488281 4.00231 -0.000488281 4.25304V13.7452C-0.000488281 13.996 0.0634258 14.23 0.167734 14.4409L5.59175 8.99931L0.16777 3.55737Z"
+								fill="white" />
+							<path
+								d="M17.8309 3.55737L12.407 8.99938L17.8309 14.441C17.9352 14.2302 17.9992 13.9961 17.9992 13.7453V4.25312C17.9992 4.00231 17.9352 3.76824 17.8309 3.55737Z"
+								fill="white" />
+						</g>
+						<defs>
+							<clipPath id="clip0_1_346">
+								<rect width="18" height="18" fill="white" />
+							</clipPath>
+						</defs>
+					</svg>
+					info@a-pallet.ru
+				</span>
+			</div>
+
+
+			<a href="tel:+74951557397" class="info__tell ">
+				<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M24.9367 19.1455L21.3592 15.5681C20.0816 14.2904 17.9096 14.8015 17.3985 16.4624C17.0152 17.6123 15.7376 18.2512 14.5877 17.9956C12.0324 17.3568 8.58269 14.0349 7.94387 11.3518C7.56057 10.2019 8.32716 8.9242 9.47705 8.54096C11.138 8.02989 11.6491 5.85788 10.3714 4.58023L6.79398 1.0028C5.77186 0.108442 4.23867 0.108442 3.34431 1.0028L0.916773 3.43034C-1.51077 5.98565 1.1723 12.7572 7.17728 18.7622C13.1822 24.7672 19.9538 27.578 22.5091 25.0227L24.9367 22.5951C25.8311 21.573 25.8311 20.0398 24.9367 19.1455Z"
+						fill="white" />
+				</svg>
+
+				+7 495 155 73 97
+			</a>
+
+		</div>
+	</header>
+	<header class="header__bottom  ">
+		<div class="header__content ">
+			<nav class="nav">
+				<ul class="nav__item">
+					<li><a href="#info" class="hvr-underline-from-left nav__link">о нас</a></li>
+					<li><a href="#product" class="hvr-underline-from-left nav__link">продукция</a></li>
+					<li><a href="#offer" class="hvr-underline-from-left nav__link">приемущества</a></li>
+					<li><a href="#" class="hvr-underline-from-left nav__link">контакты</a></li>
+				</ul>
+			</nav>
+
+			<button type="button" class="header__btn btn__reset ">
+				<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path
+						d="M12.5579 18.0758C11.9674 18.0758 11.3844 17.9073 10.8857 17.5882C6.54331 14.8088 2.91579 10.9649 0.395448 6.47178C-0.285023 5.25866 -0.0721436 3.72327 0.913162 2.738L2.84405 0.807113C3.60217 0.0489962 4.83566 0.0489962 5.59377 0.807113L7.29552 2.50886C8.05364 3.26694 8.05364 4.50047 7.29552 5.25854L6.28938 6.26469C7.73324 8.28276 9.45301 10.0727 11.4111 11.5957L12.522 10.485C13.2801 9.72682 14.5135 9.72686 15.2716 10.485L16.9758 12.1892C17.732 12.9454 17.7336 14.1773 16.9794 14.9354L14.7727 17.1533C14.2729 17.6557 13.6102 17.9763 12.9067 18.0561C12.7905 18.0693 12.674 18.0758 12.5579 18.0758Z"
+						fill="#312C21" />
+					<path
+						d="M17.927 1.12089H11.8695C12.0274 0.937253 12.061 0.667254 11.9331 0.445656C11.7711 0.16514 11.4125 0.06908 11.132 0.231017L9.4546 1.19943C9.27315 1.30417 9.16138 1.49778 9.16138 1.70729C9.16138 1.91681 9.27315 2.11042 9.4546 2.21516L11.132 3.18357C11.2243 3.2369 11.3252 3.26223 11.4247 3.26223C11.6273 3.26223 11.8245 3.15706 11.9331 2.96893C12.061 2.74733 12.0273 2.47737 11.8695 2.29374H17.927C18.423 2.29374 18.8264 2.69717 18.8264 3.19311C18.8264 3.68905 18.423 4.09248 17.927 4.09248H13.1157C12.7918 4.09248 12.5293 4.35505 12.5293 4.67893C12.5293 5.0028 12.7918 5.26537 13.1157 5.26537H17.927C19.0697 5.26537 19.9993 4.33578 19.9993 3.19311C19.9993 2.05048 19.0697 1.12089 17.927 1.12089Z"
+						fill="#312C21" />
+				</svg>
+
+				Обратный звонок
+			</button>
+		</div>
+	</header>
+
+	<main>
+		<section id="hero" class="hero">
+			<div class="container hero__content">
+				<div class="swiper">
+
+					<div class="swiper-wrapper">
+
+						<div class="swiper-slide">
+							<h1 class="hero__title">Продажа поддонов Б/У в Парашке</h1>
+							<p class="hero__descr">
+								Доставка осуществляется круглосуточно,
+								в любое удобное время
+							</p>
+							<button type="button" class="hero__btn btn__reset">
+								Подробнее
+							</button>
+						</div>
+
+						<div class="swiper-slide">
+							<h1 class="hero__title">Продажа поддонов Б/У в Парашке</h1>
+							<p class="hero__descr">
+								Доставка осуществляется круглосуточно,
+								в любое удобное время
+							</p>
+							<button type="button" class="hero__btn btn__reset">
+								Подробнее
+							</button>
+						</div>
+
+						<div class="swiper-slide">
+							<h1 class="hero__title">Продажа поддонов Б/У в Парашке</h1>
+							<p class="hero__descr">
+								Доставка осуществляется круглосуточно,
+								в любое удобное время
+							</p>
+							<button type="button" class="hero__btn btn__reset">
+								Подробнее
+							</button>
+						</div>
+
+
+					</div>
+					<div class="swiper-pagination"></div>
+					<div class="swiper-button-prev"></div>
+					<div class="swiper-button-next"></div>
+				</div>
+			</div>
+		</section>
+
+
+		<section id="product" class="product">
+			<div class="container">
+				<div class="content">
+
+					<div class="product__content hvr-grow">
+						<img class="product__img" src="img/11.svg" alt="images">
+						<h3 class="product__title">
+							ОБЛЕГЧЕННЫЙ ПОДДОН 1200X800
+						</h3>
+
+						<p class="product__descr">
+							Размер: 1200х800 мм тонкий
+							Грузоподъемность: 600-800 кг
+							Толщина доски: 15-17мм
+						</p>
+
+						<button type="button" class="product__btn">
+							Заказать
+						</button>
+					</div>
+
+
+					<div class="product__content hvr-grow">
+						<img class="product__img" src="img/21.svg" alt="images">
+						<h3 class="product__title ">
+							ТИПОВОЙ 1-Й СОРТ 1200X800
+						</h3>
+
+						<p class="product__descr">
+							Размер: 1200х800 мм
+							Грузоподъемность: 1500 кг
+							Толщина доски: 22мм
+
+						</p>
+
+						<button type="button" class="product__btn">
+							Заказать
+						</button>
+					</div>
+
+					<div class="product__content hvr-grow">
+						<img class="product__img" src="img/31.svg" alt="">
+						<h3 class="product__title ">
+							ТИПОВОЙ 2-Й СОРТ 1200X800
+						</h3>
+
+						<p class="product__descr">
+							Размер: 1200х800 мм
+							Грузоподъемность: 1500 кг
+							Толщина доски: 22мм
+
+						</p>
+
+						<button type="button" class="product__btn">
+							Заказать
+						</button>
+					</div>
+
+					<div class="product__content hvr-grow">
+						<img class="product__img" src="img/41.svg" alt="images">
+						<h3 class="product__title">
+							ЕВРОПОДДОН 1-Й СОРТ 1200X800
+
+						</h3>
+
+						<p class="product__descr">
+							Размер: 1200х800 мм
+							Грузоподъемность: 2500 кг
+							Толщина доски: 22-25 мм
+
+						</p>
+
+						<button type="button" class="product__btn">
+							Заказать
+						</button>
+					</div>
+
+					<div class="product__content hvr-grow">
+						<img class="product__img" src="img/51.svg" alt="">
+						<h3 class="product__title">
+							ЕВРОПОДДОН 2-Й СОРТ 1200X800
+						</h3>
+
+						<p class="product__descr">
+							Размер: 1200х800 мм
+							Грузоподъемность: 2500 кг
+							Толщина доски: 22-25 мм
+
+						</p>
+
+						<button type="button" class="product__btn">
+							Заказать
+						</button>
+					</div>
+
+					<div class="product__content hvr-grow">
+						<img class="product__img" src="img/61.svg" alt="">
+						<h3 class="product__title">
+							ПЛОЩАДКА 1200X1000
+						</h3>
+
+						<p class="product__descr">
+							Размер: 1200х1000 мм
+							Грузоподъемность: 1500-2000 кг
+
+						</p>
+
+						<button type="button" class="product__btn">
+							Заказать
+						</button>
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<section id="info" class="info">
+			<div class="sub__info">
+				<div class="info--sub__container">
+					<div class="sub--info__back">
+						<h2 class="sub__info--title">
+							о нас
+						</h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="container info__content">
+				<div class="info__block">
+					<h3 class="info__title">
+						Мы
+					</h3>
+
+					<h3 class="info__value">
+						10 лет
+					</h3>
+
+					<p class="info__descr">
+						На палетном рынке
+					</p>
+				</div>
+
+				<div class="info__block">
+					<h3 class="info__title">
+						У нас
+					</h3>
+
+					<h3 class="info__value">
+						12
+					</h3>
+
+					<p class="info__descr">
+						Складов по ЦФО
+					</p>
+				</div>
+
+				<div class="info__block">
+					<h3 class="info__title">
+						Доставка
+					</h3>
+
+					<h3 class="info__value">
+						24 часа
+					</h3>
+
+					<p class="info__descr">
+						В сутки, в любое время
+					</p>
+				</div>
+
+				<div class="info__block">
+					<h3 class="info__title">
+						У нас
+					</h3>
+
+					<h3 class="info__value">
+						50 +
+					</h3>
+
+					<p class="info__descr">
+						Постоянных клиентов
+					</p>
+				</div>
+
+				<div class="info__block">
+					<h3 class="info__title">
+						Мы
+					</h3>
+
+					<h3 class="info__value">
+						10 лет
+					</h3>
+
+					<p class="info__descr">
+						На палетном рынке
+					</p>
+				</div>
+			</div>
+		</section>
+		<section id="offer" class="offer">
+			<div class="offer__sub--container">
+				<div class="offer__sub--block">
+					<h2 class="offer__sub--title">
+						Почему с нами выгодно?
+					</h2>
+				</div>
+			</div>
+			<div class="container offer__grid">
+				<div class="offer__block">
+					<h2 class="offer__value">
+						01
+					</h2>
+
+					<h3 class="offer__title">
+						НАЛИЧИЕ ТОВАРА
+					</h3>
+
+					<p class="offer__descr">
+						Подходящие
+						поддоны есть всегда!
+						Мы подберём необходимый паллет.
+					</p>
+				</div>
+
+				<div class="offer__block">
+					<h2 class="offer__value">
+						02
+					</h2>
+
+					<h3 class="offer__title">
+						СТАБИЛЬНОСТЬ
+					</h3>
+
+					<p class="offer__descr">
+						Наша надежность подтверждена
+						рекомендациями ведущих
+						компаний.
+
+					</p>
+				</div>
+
+				<div class="offer__block">
+					<h2 class="offer__value">
+						03
+					</h2>
+
+					<h3 class="offer__title">
+						ПРОФЕССИОНАЛИЗМ
+
+					</h3>
+
+					<p class="offer__descr">
+						Анализируем потребности
+						и усовершенствуем услуги.
+				</div>
+
+				<div class="offer__block">
+					<h2 class="offer__value">
+						04
+					</h2>
+
+					<h3 class="offer__title">
+						КАЧЕСТВО
+
+					</h3>
+
+					<p class="offer__descr">
+						У нас многоэтапный контроль
+						качества продукции
+					</p>
+				</div>
+
+				<div class="offer__block">
+					<h2 class="offer__value">
+						05
+					</h2>
+
+					<h3 class="offer__title">
+						ЭКОНОМИЧНОСТЬ
+					</h3>
+
+					<p class="offer__descr">
+						Знаем секреты
+						экономии в области паллетной
+						логистики. Сократите Ваши затраты!
+
+					</p>
+				</div>
+
+				<div class="offer__block">
+					<h2 class="offer__value">
+						06
+					</h2>
+
+					<h3 class="offer__title">
+						КРУГЛОСУТОЧНАЯ ДОСТАВКА
+					</h3>
+
+					<p class="offer__descr">
+						Быстрая и аккуратная доставка
+						собственным транспортом 24/7.
+					</p>
+				</div>
+
+				<div class="offer__block">
+					<h2 class="offer__value">
+						07
+					</h2>
+
+					<h3 class="offer__title">
+						ОТСРОЧКА ПЛАТЕЖА
+					</h3>
+
+					<p class="offer__descr">
+						Мы готовы пойти на встречу нашим
+						заказчикам.
+					</p>
+				</div>
+
+				<div class="offer__block">
+					<h2 class="offer__value">
+						08
+					</h2>
+
+					<h3 class="offer__title">
+						ОПЕРАТИВНОСТЬ
+					</h3>
+
+					<p class="offer__descr">
+						Оперативный подход, и грамотно
+						выстроенная логистика.
+
+					</p>
+				</div>
+			</div>
+		</section>
+		<section class="reception">
+
+			<div class="reception__sub--container">
+				<div class="reception__sub--block">
+					<h2 class="reception__sub--title">
+						У вас остались вопросы?
+					</h2>
+				</div>
+			</div>
+
+			<div class="container">
+				<div class="grid__column--reception">
+					<div class="column-1">
+						<img src="img/receprion.png" alt="images">
+						<div class="reception__descr--block">
+							<p class="reception__descr">
+								Мы с удовольствием ответим на
+								все вопросы и проконсультируют
+								по товарным позициям.
+							</p>
+						</div>
+					</div>
+
+					<div class="column-2">
+						<h2 class="reception__title">Отправить заявку</h2>
+
+						<form action="#" method="post" enctype="multipart/form-data">
+
+							<div>
+								<input class="input-1" placeholder="Ваше имя" name="username" type="text" tabindex="1">
+							</div>
+
+							<div>
+								<input class="input-1" placeholder="Номер телефона" name="userphone" type="tel" tabindex="2">
+							</div>
+
+							<div>
+								<input class="input-3" placeholder="Введите текст" type="text" tabindex="3">
+							</div>
+							<div class="block__data">
+								<input class="ckeckbox__data" type="checkbox" name="data" value="yes" tabindex="4">
+								<p class="descr__data">
+									Даю согласие на обработку персональных данных
+								</p>
+							</div>
+							<button type="button" class="reception__btn btn__reset" type="submit">
+								Отправить
+							</button>
+
+							<small class="reception__form--descr">
+								<svg width="10" height="12" viewBox="0 0 10 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M1.79567 11.6237H8.21959C8.53891 11.6233 8.84514 11.4963 9.07088 11.2705C9.29672 11.0447 9.42371 10.7385 9.42408 10.4192V6.00275C9.42372 5.68343 9.29673 5.3772 9.07088 5.15146C8.84513 4.92562 8.53888 4.79863 8.21959 4.79826H7.8181V3.19228C7.8181 2.18818 7.28243 1.26036 6.41286 0.758306C5.54329 0.256346 4.47197 0.256346 3.6024 0.758306C2.73283 1.26036 2.19717 2.18818 2.19717 3.19228V4.79826H1.79567C1.47636 4.79862 1.17012 4.92561 0.944388 5.15146C0.718545 5.37722 0.591554 5.68346 0.591187 6.00275V10.4192C0.591545 10.7385 0.718536 11.0447 0.944388 11.2705C1.17014 11.4963 1.47638 11.6233 1.79567 11.6237ZM5.30864 8.81321C5.30864 8.97955 5.17385 9.11434 5.00752 9.11434C4.84118 9.11434 4.7064 8.97955 4.7064 8.81321V7.60873C4.7064 7.4424 4.84118 7.30761 5.00752 7.30761C5.17385 7.30761 5.30864 7.4424 5.30864 7.60873V8.81321ZM3.00016 3.19228C3.00016 2.47505 3.38275 1.81233 4.00389 1.45376C4.62504 1.0952 5.39022 1.0952 6.01137 1.45376C6.63252 1.81233 7.01511 2.47508 7.01511 3.19228V4.79826H3.00016V3.19228Z"
+										fill="#312C21" />
+								</svg>
+
+								Ваши данные защищены
+							</small>
+						</form>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__grid--coll">
+
+				<div class="footer__coll">
+					<img class="footer__img" src="img/Logo.svg" alt="images">
+
+					<p class="descr__coll-1">
+						© Все права защищены.
+					</p>
+				</div>
+
+				<div class="footer__coll">
+					<ul class="foooter__item">
+						<li><a href="#info" class="footer__link">О нас</a></li>
+						<li><a href="#product" class="footer__link">Продукция</a></li>
+						<li><a href="#offer" class="footer__link">Приемущества</a></li>
+						<li><a href="#" class="footer__link">Контакты</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__coll">
+					<ul class="footer__item">
+						<li><a href="#" class="footer__info info__1">
+								<svg width="18" height="24" viewBox="0 0 18 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M8.79316 0.00195312C4.08338 0.00195312 0.251709 3.83362 0.251709 8.54336C0.251709 14.3883 7.89547 22.969 8.22091 23.3314C8.52659 23.6719 9.06029 23.6713 9.36541 23.3314C9.69085 22.969 17.3346 14.3883 17.3346 8.54336C17.3345 3.83362 13.5029 0.00195312 8.79316 0.00195312ZM8.79316 12.8408C6.42355 12.8408 4.49579 10.913 4.49579 8.54336C4.49579 6.17375 6.4236 4.24599 8.79316 4.24599C11.1627 4.24599 13.0905 6.1738 13.0905 8.54341C13.0905 10.913 11.1627 12.8408 8.79316 12.8408Z"
+										fill="#FFC501" />
+								</svg>
+
+								ООО СТРОЙБРИГ ИНН:
+								7720484439 ОГРН:1197746616649</a>
+						</li>
+						<li><a href="#" class="footer__info info__margin">
+								<svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<g clip-path="url(#clip0_1_275)">
+										<path
+											d="M14.4974 12.1169L12.6234 13.9972C11.8635 14.7598 10.5264 14.7763 9.75004 13.9972L7.87599 12.1169L1.14526 18.8695C1.3958 18.9854 1.67204 19.0545 1.96571 19.0545H20.4077C20.7014 19.0545 20.9776 18.9855 21.228 18.8696L14.4974 12.1169Z"
+											fill="#FFC501" />
+										<path
+											d="M20.4076 3.32031H1.96563C1.67195 3.32031 1.39572 3.38945 1.14526 3.5053L8.33752 10.7214C8.338 10.7219 8.33857 10.722 8.33905 10.7225C8.33953 10.7229 8.33962 10.7236 8.33962 10.7236L10.6782 13.0699C10.9266 13.3183 11.4467 13.3183 11.6951 13.0699L14.0333 10.724C14.0333 10.724 14.0338 10.7229 14.0343 10.7225C14.0343 10.7225 14.0354 10.7219 14.0358 10.7214L21.2279 3.50526C20.9775 3.38936 20.7013 3.32031 20.4076 3.32031Z"
+											fill="#FFC501" />
+										<path
+											d="M0.208057 4.42212C0.078438 4.68424 -0.00109863 4.9752 -0.00109863 5.28688V17.0863C-0.00109863 17.398 0.0783506 17.6889 0.208013 17.951L6.95041 11.1868L0.208057 4.42212Z"
+											fill="#FFC501" />
+										<path
+											d="M22.1652 4.42212L15.4229 11.1869L22.1652 17.9512C22.2948 17.6891 22.3743 17.3981 22.3743 17.0864V5.28697C22.3743 4.9752 22.2948 4.68424 22.1652 4.42212Z"
+											fill="#FFC501" />
+									</g>
+									<defs>
+										<clipPath id="clip0_1_275">
+											<rect width="22.3751" height="22.3751" fill="white" />
+										</clipPath>
+									</defs>
+								</svg>
+
+								info@a-pallet.ru
+							</a></li>
+						<li><a href="#" class="footer__info info__margin">
+								<svg width="22" height="23" viewBox="0 0 22 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path
+										d="M11 0.375244C4.925 0.375244 0 5.30012 0 11.3752C0 17.4504 4.92488 22.3752 11 22.3752C17.0751 22.3752 22 17.4504 22 11.3752C22 5.30012 17.0751 0.375244 11 0.375244ZM11 3.70858C11.3683 3.70858 11.6666 4.00712 11.6666 4.37518V10.9895L16.8229 13.9687C17.1416 14.1529 17.2465 14.556 17.0623 14.8751C16.8782 15.1938 16.475 15.2987 16.156 15.1146C14.3277 14.0599 12.4894 12.9991 10.6663 11.9479C10.4672 11.8326 10.3328 11.6215 10.3328 11.375V4.37503C10.3328 4.00673 10.6314 3.70842 10.9995 3.70842L11 3.70858Z"
+										fill="#FFC501" />
+								</svg>
+
+								Пн-Вс с 9:00 до 20:00
+							</a></li>
+					</ul>
+				</div>
+
+				<div class="footer__coll">
+					<h3 class="footer__title">
+						Заказы принимаются круглосуточно
+					</h3>
+
+					<button type="button" class="footer__btn btn__reset ">
+						<svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M12.5579 18.0758C11.9674 18.0758 11.3844 17.9073 10.8857 17.5882C6.54331 14.8088 2.91579 10.9649 0.395448 6.47178C-0.285023 5.25866 -0.0721436 3.72327 0.913162 2.738L2.84405 0.807113C3.60217 0.0489962 4.83566 0.0489962 5.59377 0.807113L7.29552 2.50886C8.05364 3.26694 8.05364 4.50047 7.29552 5.25854L6.28938 6.26469C7.73324 8.28276 9.45301 10.0727 11.4111 11.5957L12.522 10.485C13.2801 9.72682 14.5135 9.72686 15.2716 10.485L16.9758 12.1892C17.732 12.9454 17.7336 14.1773 16.9794 14.9354L14.7727 17.1533C14.2729 17.6557 13.6102 17.9763 12.9067 18.0561C12.7905 18.0693 12.674 18.0758 12.5579 18.0758Z"
+								fill="#FFC501" />
+							<path
+								d="M17.927 1.12089H11.8695C12.0274 0.937253 12.061 0.667254 11.9331 0.445656C11.7711 0.16514 11.4125 0.06908 11.132 0.231017L9.4546 1.19943C9.27315 1.30417 9.16138 1.49778 9.16138 1.70729C9.16138 1.91681 9.27315 2.11042 9.4546 2.21516L11.132 3.18357C11.2243 3.2369 11.3252 3.26223 11.4247 3.26223C11.6273 3.26223 11.8245 3.15706 11.9331 2.96893C12.061 2.74733 12.0273 2.47737 11.8695 2.29374H17.927C18.423 2.29374 18.8264 2.69717 18.8264 3.19311C18.8264 3.68905 18.423 4.09248 17.927 4.09248H13.1157C12.7918 4.09248 12.5293 4.35505 12.5293 4.67893C12.5293 5.0028 12.7918 5.26537 13.1157 5.26537H17.927C19.0697 5.26537 19.9993 4.33578 19.9993 3.19311C19.9993 2.05048 19.0697 1.12089 17.927 1.12089Z"
+								fill="#FFC501" />
+						</svg>
+
+						Обратный звонок
+					</button>
+
+
+					<a href="tel:+74951557397" class="info__tell ">
+						<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M24.9367 19.1455L21.3592 15.5681C20.0816 14.2904 17.9096 14.8015 17.3985 16.4624C17.0152 17.6123 15.7376 18.2512 14.5877 17.9956C12.0324 17.3568 8.58269 14.0349 7.94387 11.3518C7.56057 10.2019 8.32716 8.9242 9.47705 8.54096C11.138 8.02989 11.6491 5.85788 10.3714 4.58023L6.79398 1.0028C5.77186 0.108442 4.23867 0.108442 3.34431 1.0028L0.916773 3.43034C-1.51077 5.98565 1.1723 12.7572 7.17728 18.7622C13.1822 24.7672 19.9538 27.578 22.5091 25.0227L24.9367 22.5951C25.8311 21.573 25.8311 20.0398 24.9367 19.1455Z"
+								fill="white" />
+						</svg>
+						+7 495 155 73 97
+					</a>
+
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<a href="#" class="link__footer">Политика конфиденциальности</a>
+			</div>
+		</div>
+	</footer>
+
+
+
+	<script src="js/script.js"></script>
+</body>
+
+</html>
